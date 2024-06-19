@@ -15,7 +15,7 @@ col1,col2 = st.columns([2,3])
 col1.image(img1)
 
 
-tab1, tab2= st.tabs(['기업정보' , '소재지'])
+tab1, tab2= st.tabs(['기업정보' , '소재지 및 지도'])
 
 with tab1:
     st.write('설립일 : 2017년 9월 4일')
@@ -41,5 +41,6 @@ with tab2:
     print(map_data)
 
     st.subheader('경기도 고양시 덕양구 삼송로 8, 6층 605호')
+    st.write('지도가 안보인다면 확대 버튼을 클릭해주세요')
     st.map(map_data)
 
